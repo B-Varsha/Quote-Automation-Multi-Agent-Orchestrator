@@ -1,0 +1,325 @@
+{
+  "restaurant": "Maharaja Catering",
+  "currency": "USD",
+  "portion_rules": {
+    "biryani": {
+      "large_tray_servings": 75,
+      "medium_tray_servings": 35,
+      "rule_description": "~75 guests per large tray"
+    },
+    "curry": {
+      "large_tray_servings": 90,
+      "medium_tray_servings": 45,
+      "rule_description": "~90 guests per large tray"
+    },
+    "appetizer_pieces": {
+      "pieces_per_guest": 1.75,
+      "rule_description": "1.5–2 pieces per guest"
+    },
+    "bread_pieces": {
+      "pieces_per_guest": 1.5,
+      "rule_description": "1.5 naans/breads per guest"
+    },
+    "rice_trays": {
+      "large_tray_servings": 60,
+      "rule_description": "~60 guests per large tray (side rice)"
+    },
+    "dessert_pieces": {
+      "pieces_per_guest": 1.25,
+      "rule_description": "1–1.5 pieces per guest"
+    }
+  },
+  "delivery_pricing_rules": {
+    "local_max_miles": 15,
+    "local_flat_rate": 50.00,
+    "extended_max_miles": 30,
+    "extended_flat_rate": 100.00,
+    "per_mile_after_extended": 2.50,
+    "setup_fee": 50.00
+  },
+  "default_tax_rate": 0.08875,
+  "categories": [
+    {
+      "id": "appetizers",
+      "name": "Appetizers & Starters",
+      "items": [
+        {
+          "id": "samosa",
+          "name": "Vegetable Samosa",
+          "aliases": ["samosa", "veg samosa", "samosas"],
+          "unit_type": "piece",
+          "unit_price": 1.50,
+          "tray_50_price": 70.00,
+          "category": "appetizer_pieces"
+        },
+        {
+          "id": "veg_pakora",
+          "name": "Vegetable Pakora",
+          "aliases": ["pakora", "veg pakora", "pakoda", "mixed pakora"],
+          "unit_type": "tray_large",
+          "unit_price": 65.00,
+          "category": "appetizers"
+        },
+        {
+          "id": "chicken_65",
+          "name": "Chicken 65",
+          "aliases": ["chicken 65", "chilli chicken", "chicken starter"],
+          "unit_type": "tray_large",
+          "unit_price": 130.00,
+          "category": "appetizers"
+        },
+        {
+          "id": "paneer_tikka",
+          "name": "Paneer Tikka",
+          "aliases": ["paneer tikka", "tandoori paneer"],
+          "unit_type": "tray_large",
+          "unit_price": 120.00,
+          "category": "appetizers"
+        },
+        {
+          "id": "tandoori_chicken",
+          "name": "Tandoori Chicken",
+          "aliases": ["tandoori chicken", "tandoori leg"],
+          "unit_type": "tray_large",
+          "unit_price": 140.00,
+          "category": "appetizers"
+        },
+        {
+          "id": "gobi_manchurian",
+          "name": "Gobi Manchurian",
+          "aliases": ["gobi manchurian", "gobi machurian", "gobi manchuri", "gobi machuri", "cauliflower manchurian", "cauliflower machurian", "gobi 65"],
+          "unit_type": "tray_large",
+          "unit_price": 100.00,
+          "category": "appetizers"
+        }
+      ]
+    },
+    {
+      "id": "biryanis",
+      "name": "Biryani & Rice Specialties",
+      "items": [
+        {
+          "id": "chicken_biryani",
+          "name": "Hyderabadi Chicken Biryani",
+          "aliases": ["chicken biryani", "hyderabadi chicken biryani", "biryani chicken"],
+          "unit_type": "tray_large",
+          "large_tray_price": 150.00,
+          "medium_tray_price": 90.00,
+          "category": "biryani"
+        },
+        {
+          "id": "mutton_biryani",
+          "name": "Special Goat/Mutton Biryani",
+          "aliases": ["mutton biryani", "goat biryani", "lamb biryani"],
+          "unit_type": "tray_large",
+          "large_tray_price": 180.00,
+          "medium_tray_price": 110.00,
+          "category": "biryani"
+        },
+        {
+          "id": "veg_biryani",
+          "name": "Royal Vegetable Biryani",
+          "aliases": ["veg biryani", "vegetable biryani"],
+          "unit_type": "tray_large",
+          "large_tray_price": 130.00,
+          "medium_tray_price": 80.00,
+          "category": "biryani"
+        },
+        {
+          "id": "paneer_biryani",
+          "name": "Paneer Dum Biryani",
+          "aliases": ["paneer biryani", "paneer dum biryani"],
+          "unit_type": "tray_large",
+          "large_tray_price": 140.00,
+          "medium_tray_price": 85.00,
+          "category": "biryani"
+        },
+        {
+          "id": "veg_pulav",
+          "name": "Royal Vegetable Pulav",
+          "aliases": ["veg pulav", "vegetable pulav", "veg pulao", "vegetable pulao", "pulav", "pulao", "pilaf", "pullaow"],
+          "unit_type": "tray_large",
+          "large_tray_price": 120.00,
+          "medium_tray_price": 75.00,
+          "category": "rice_trays"
+        },
+        {
+          "id": "jeera_rice",
+          "name": "Basmati Jeera Rice",
+          "aliases": ["jeera rice", "basmati rice", "plain rice"],
+          "unit_type": "tray_large",
+          "large_tray_price": 50.00,
+          "medium_tray_price": 30.00,
+          "category": "rice_trays"
+        }
+      ]
+    },
+    {
+      "id": "curries",
+      "name": "Main Curries & Gravies",
+      "items": [
+        {
+          "id": "chicken_tikka_masala",
+          "name": "Chicken Tikka Masala",
+          "aliases": ["chicken tikka masala", "ctm"],
+          "unit_type": "tray_large",
+          "large_tray_price": 140.00,
+          "medium_tray_price": 80.00,
+          "category": "curry"
+        },
+        {
+          "id": "butter_chicken",
+          "name": "Maharaja Butter Chicken",
+          "aliases": ["butter chicken", "murgh makhani"],
+          "unit_type": "tray_large",
+          "large_tray_price": 140.00,
+          "medium_tray_price": 80.00,
+          "category": "curry"
+        },
+        {
+          "id": "lamb_curry",
+          "name": "Lamb Rogan Josh",
+          "aliases": ["lamb curry", "lamb rogan josh", "goat curry"],
+          "unit_type": "tray_large",
+          "large_tray_price": 170.00,
+          "medium_tray_price": 95.00,
+          "category": "curry"
+        },
+        {
+          "id": "palak_paneer",
+          "name": "Palak Paneer",
+          "aliases": ["palak paneer", "saag paneer"],
+          "unit_type": "tray_large",
+          "large_tray_price": 130.00,
+          "medium_tray_price": 75.00,
+          "category": "curry"
+        },
+        {
+          "id": "paneer_butter_masala",
+          "name": "Paneer Butter Masala",
+          "aliases": ["paneer butter masala", "shahi paneer"],
+          "unit_type": "tray_large",
+          "large_tray_price": 130.00,
+          "medium_tray_price": 75.00,
+          "category": "curry"
+        },
+        {
+          "id": "dal_makhani",
+          "name": "Dal Makhani",
+          "aliases": ["dal makhani", "black dal"],
+          "unit_type": "tray_large",
+          "large_tray_price": 110.00,
+          "medium_tray_price": 65.00,
+          "category": "curry"
+        },
+        {
+          "id": "chana_masala",
+          "name": "Amritsari Chana Masala",
+          "aliases": ["chana masala", "chole"],
+          "unit_type": "tray_large",
+          "large_tray_price": 100.00,
+          "medium_tray_price": 60.00,
+          "category": "curry"
+        }
+      ]
+    },
+    {
+      "id": "breads",
+      "name": "Fresh Breads",
+      "items": [
+        {
+          "id": "garlic_naan",
+          "name": "Garlic Butter Naan",
+          "aliases": ["garlic naan", "garlic butter naan"],
+          "unit_type": "piece",
+          "unit_price": 2.50,
+          "category": "bread_pieces"
+        },
+        {
+          "id": "butter_naan",
+          "name": "Traditional Butter Naan",
+          "aliases": ["butter naan", "plain naan", "naan"],
+          "unit_type": "piece",
+          "unit_price": 2.00,
+          "category": "bread_pieces"
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "items": [
+        {
+          "id": "gulab_jamun",
+          "name": "Gulab Jamun",
+          "aliases": ["gulab jamun", "jamun"],
+          "unit_type": "piece",
+          "unit_price": 1.25,
+          "tray_50_price": 60.00,
+          "category": "dessert_pieces"
+        },
+        {
+          "id": "rasmalai",
+          "name": "Kesar Rasmalai",
+          "aliases": ["rasmalai", "kesar rasmalai"],
+          "unit_type": "piece",
+          "unit_price": 2.00,
+          "tray_40_price": 75.00,
+          "category": "dessert_pieces"
+        }
+      ]
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "items": [
+        {
+          "id": "mango_lassi",
+          "name": "Mango Lassi Dispenser (5 Gallon)",
+          "aliases": ["mango lassi", "lassi"],
+          "unit_type": "dispenser",
+          "unit_price": 50.00,
+          "category": "beverages"
+        },
+        {
+          "id": "masala_chai",
+          "name": "Masala Chai Container",
+          "aliases": ["masala chai", "chai", "tea"],
+          "unit_type": "container",
+          "unit_price": 30.00,
+          "category": "beverages"
+        }
+      ]
+    },
+    {
+      "id": "rentals_services",
+      "name": "Plate & Setup Services",
+      "items": [
+        {
+          "id": "disposable_plates",
+          "name": "Standard Heavy-Duty Disposable Plates & Cutlery Set",
+          "aliases": ["disposable plates", "standard plates", "plastic plates"],
+          "unit_type": "per_guest",
+          "unit_price": 2.50,
+          "category": "rentals"
+        },
+        {
+          "id": "eco_plates",
+          "name": "Premium Bamboo Eco-Friendly Dinnerware Set",
+          "aliases": ["bamboo plates", "eco plates", "premium plates"],
+          "unit_type": "per_guest",
+          "unit_price": 4.50,
+          "category": "rentals"
+        },
+        {
+          "id": "chafing_dishes",
+          "name": "Buffet Chafing Dish Warmer Rental (per station)",
+          "aliases": ["chafing dish", "warmers", "buffet warmers"],
+          "unit_type": "unit",
+          "unit_price": 15.00,
+          "category": "rentals"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Catering Quote Assistant",
+  "description": "Multi-agent Catering Quote Assistant backend and interactive orchestrator for Maharaja Catering records.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
